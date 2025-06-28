@@ -1,0 +1,5 @@
+git checkout -b temp
+git checkout master
+git merge temp
+git pull origin master -X ours #To keep the conflict files as local version, or you can use git pull origin master --rebase
+git push origin master
